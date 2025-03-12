@@ -10,7 +10,7 @@ public class BasicApplicationTests  {
 
     @Test
     void contextLoads() {
-       String message = "Default Message Cambio 11";
+    String message = "Default Message Cambios: Sapin mi amigo borracón al rescate...";
         assertNotNull(message);
     }
 }
