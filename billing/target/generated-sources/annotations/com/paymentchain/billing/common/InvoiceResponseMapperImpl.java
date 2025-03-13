@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-03-12T10:07:54-0500",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.41.0.z20250213-2037, environment: Java 21.0.6 (Eclipse Adoptium)"
+    date = "2025-03-12T23:22:49-0500",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 19.0.2 (Oracle Corporation)"
 )
 @Component
 public class InvoiceResponseMapperImpl implements InvoiceResponseMapper {
@@ -25,9 +25,9 @@ public class InvoiceResponseMapperImpl implements InvoiceResponseMapper {
 
         invoiceResponse.setCustomer( source.getCustomerId() );
         invoiceResponse.setInvoiceId( source.getId() );
-        invoiceResponse.setAmount( source.getAmount() );
-        invoiceResponse.setDetail( source.getDetail() );
         invoiceResponse.setNumber( source.getNumber() );
+        invoiceResponse.setDetail( source.getDetail() );
+        invoiceResponse.setAmount( source.getAmount() );
 
         return invoiceResponse;
     }
@@ -56,9 +56,9 @@ public class InvoiceResponseMapperImpl implements InvoiceResponseMapper {
 
         invoice.setCustomerId( srr.getCustomer() );
         invoice.setId( srr.getInvoiceId() );
-        invoice.setAmount( srr.getAmount() );
-        invoice.setDetail( srr.getDetail() );
         invoice.setNumber( srr.getNumber() );
+        invoice.setDetail( srr.getDetail() );
+        invoice.setAmount( srr.getAmount() );
 
         return invoice;
     }
